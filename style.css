@@ -155,7 +155,7 @@ h2 {
 }
 
 .project-card {
-  background: #fff;
+  background: #1E1D22;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   padding: 24px;
@@ -169,12 +169,12 @@ h2 {
 .project-card h3 {
   font-size: 1.4rem;
   margin-top: 0;
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
 .project-card p {
   font-size: 1rem;
-  color: #444;
+  color: #c4c4c4;
 }
 
 .project-card a {
