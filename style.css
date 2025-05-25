@@ -1,12 +1,12 @@
-/* Ethan Portfolio – Clean & Modern CSS */
+/* Ethan Portfolio – Updated with Project Styling and Theme */
 
 body {
-  background: #fff;
-  color: #181818;
-  font-family: 'Inter', Arial, sans-serif;
+  background-color: #f9f9fb;
+  color: #2e2e2e;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 
@@ -27,7 +27,6 @@ footer {
   }
 }
 
-/* Header */
 header {
   background: #fff;
   padding-top: 48px;
@@ -37,14 +36,7 @@ header {
 header h1 {
   font-size: 3.5rem;
   font-weight: 900;
-  margin: 0 0 8px;
-  letter-spacing: -0.02em;
-}
-
-nav {
-  margin-top: 2px;
-  border-top: 1px solid #e5e5e5;
-;
+  margin-bottom: 8px;
 }
 
 nav ul {
@@ -52,108 +44,131 @@ nav ul {
   display: flex;
   gap: 40px;
   padding: 0;
-  margin: 0;
+  margin: 32px 0 0;
 }
 
 nav a {
-  color: #181818;
+  color: #2e2e2e;
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   position: relative;
-  transition: color 0.2s;
 }
 
 nav a::after {
   content: '';
-  display: block;
   width: 0;
   height: 2px;
-  background: #181818;
+  background: #6c63ff;
   position: absolute;
   bottom: -4px;
   left: 0;
-  transition: width 0.2s;
+  transition: width 0.3s;
 }
 
-nav a:hover::after,
-nav a:focus::after {
+nav a:hover::after {
   width: 100%;
 }
 
-/* Hero Section */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 48px;
   margin: 48px 0;
 }
 
 .herotext {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
 }
 
 .herotext h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 12px;
-}
-
-.herotext .location,
-.herotext p {
-  font-size: 1.25rem;
   margin-bottom: 12px;
 }
 
 .heroimage {
   flex: 1;
-  min-width: 300px;
   text-align: right;
-  padding-left: 24px;
 }
 
 .hero-img {
   width: 100%;
-  max-width: 400px;
-  border-radius: 0;
+  max-width: 360px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Content Sections */
 section {
-  padding-top: 40px;
-  border-top: 1px solid #e5e5e5;
-}
-
-section:first-of-type {
-  border-top: none;
+  padding: 40px 0;
+  border-top: 1px solid #e0e0e0;
 }
 
 h2 {
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-weight: 900;
   margin-bottom: 18px;
-  letter-spacing: -0.01em;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  color: #1a1a1a;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.project-card a {
+  margin-top: 12px;
+  display: inline-block;
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
 }
 
 a {
-  color: #181818;
+  color: #6c63ff;
   text-decoration: underline;
-  transition: color 0.2s;
 }
 
 a:hover {
-  color: #000;
+  color: #4b4bff;
 }
 
-/* Footer */
 footer {
-  padding: 48px 0 24px;
   text-align: center;
-  font-size: 1rem;
-  background: #fff;
-  border-top: 1px solid #e5e5e5;
+  padding: 48px 0 24px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+  color: #777;
 }
 
 .contact-table {
@@ -161,21 +176,20 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
-  margin: 24px 0 16px;
+  margin-bottom: 16px;
 }
 
 .contact-table a {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #181818;
+  color: #2e2e2e;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-decoration: none;
-  transition: color 0.2s;
 }
 
 .contact-table a:hover {
-  color: #000;
+  color: #6c63ff;
   text-decoration: underline;
 }
