@@ -37,6 +37,15 @@ header h1 {
   font-size: 3.5rem;
   font-weight: 900;
   margin-bottom: 8px;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    white-space: normal;
+  }
 }
 
 nav ul {
@@ -45,6 +54,16 @@ nav ul {
   gap: 40px;
   padding: 0;
   margin: 32px 0 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
 }
 
 nav a {
@@ -77,6 +96,22 @@ nav a:hover::after {
   flex-wrap: wrap;
   gap: 48px;
   margin: 48px 0;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroimage {
+    text-align: center;
+    padding: 0;
+  }
+
+  .herotext h2 {
+    font-size: 2rem;
+  }
 }
 
 .herotext {
