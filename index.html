@@ -8,40 +8,43 @@
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- Header -->
+    <!-- ================= Header ================= -->
     <header>
       <h1>Ethan Sheridan-Smith</h1>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="projects/MLProject.html">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+          <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+          <li><a href="#resume"><i class="fas fa-download"></i> Resume</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- Main Content -->
+    <!-- ================= Main Content ================= -->
     <main>
-      <!-- Hero Section -->
+
+      <!-- ===== Hero Section ===== -->
       <section class="hero">
         <div class="herotext">
-          <h2>Service Design Connectivity Engineer @ Dyson</h2>
-          <p class="location">(Malmesbury, UK)</p>
-          <p>I specialise in diagnostics, connectivity, and serviceability for embedded and connected products. I’m passionate about using technology to enhance repair strategies, streamline global service operations, and build intelligent, user-focused tools.</p>
+          <h2>Service Design Connectivity Engineer</h2>
+          <p class="location">(Bristol, UK)</p>
+          <p>
+            I specialise in diagnostics, connectivity, and serviceability for embedded and connected products. I’m passionate about using technology to enhance repair strategies, streamline global service operations, and build intelligent, user-focused tools.
+          </p>
         </div>
         <div class="heroimage">
           <img src="assets/images/EthansImage.jpeg" alt="Ethan's photo" class="hero-img" />
         </div>
       </section>
 
-      <!-- About Section -->
+      <!-- ===== About Section ===== -->
       <section id="about">
         <h2>About Me</h2>
         <p>
@@ -49,7 +52,7 @@
         </p>
       </section>
 
-      <!-- Experience Section -->
+      <!-- ===== Experience Section ===== -->
       <section id="experience">
         <h2>Experience Highlights</h2>
         <ul>
@@ -61,15 +64,14 @@
         </ul>
       </section>
 
-      <!-- Projects Section -->
+      <!-- ===== Projects Section ===== -->
       <section id="projects">
         <h2>Selected Projects</h2>
         <div class="project-list">
           <div class="project-card">
             <h3>ML API for Employee Attrition</h3>
             <p>Developed a REST API with Flask to serve an ML model predicting employee attrition. Containerized with Docker and deployed on Heroku.</p>
-            <a href="projects/MLProject.html">View Case Study →</a>
-
+            <a href="#">View Case Study →</a>
           </div>
 
           <div class="project-card">
@@ -80,24 +82,16 @@
         </div>
       </section>
 
-      <!-- Resumem Section -->
-      <section id="Resume">
+      <!-- ===== Resume Section ===== -->
+      <section id="resume" style="text-align: center; padding-top: 60px;">
         <h2>Resume</h2>
-        <p>
-          <a href="assets/Resume/Ethan-V-Sheridan-Smith-CV.pdf" download>Download CV</a>
-        </p>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          Email me at <a href="mailto:ethanventonsheridansmith@gmail.com">ethanventonsheridansmith@gmail.com</a>
-        </p>
+        <a href="assets/Resume/Ethan-V-Sheridan-Smith-CV.pdf" download class="download-btn">
+          <i class="fas fa-download"></i> Download My CV
+        </a>
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- ================= Footer ================= -->
     <footer>
       <div class="contact-table">
         <a href="https://github.com/ethansheridansmith" target="_blank" aria-label="GitHub">
