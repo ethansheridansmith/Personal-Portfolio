@@ -1,88 +1,91 @@
-<!--
-# Ethan's Portfolio Project
-A simple HTML template for Ethan's portfolio.
--->
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ethan's Portfolio Project</title>
-  <!-- Main stylesheet -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Inter font for modern look -->
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700;800&display=swap" rel="stylesheet">
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethan Sheridan-Smith – Service Design Engineer</title>
 
-<body>
-  <!--
-  ## Header
-  Contains site title and navigation links
-  -->
-  <header class="header">
-    <h1>PORTFOLIO</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <!--
-  ## Main Content
-  About, Projects, and Contact sections
-  -->
-  <main>
-    <section class="hero">
-      <div class="heroimage">
-        <img src="EthansImage.jpeg" alt="Ethan's photo" class ="heroImage">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Ethan Sheridan-Smith</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="herotext">
+          <h2>Service Design Connectivity Engineer</h2>
+          <p class="location">(Bristol, UK)</p>
+          <p>I specialise in diagnostics, connectivity, and serviceability for embedded and connected products. I’m passionate about using technology to enhance repair strategies, streamline global service operations, and build intelligent, user-focused tools.</p>
+        </div>
+        <div class="heroimage">
+          <img src="Images/EthansImage.jpeg" alt="Ethan's photo" class="hero-img" />
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I'm a Computer Science graduate (First-Class Hons) currently working at Dyson as a Service Design Connectivity Engineer. I work across software diagnostics, connectivity (Bluetooth, WiFi, NFC), and HMI design to make complex technology more serviceable and user-friendly. I’m now looking to apply these skills in cutting-edge roles at the intersection of design, data, and full-stack development—ultimately aiming to contribute to human-centred, impactful systems.
+        </p>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience">
+        <h2>Experience Highlights</h2>
+        <ul>
+          <li>Developed and deployed service software requirements for global Dyson products.</li>
+          <li>Improved diagnostics workflows and repair tools across connected product lines.</li>
+          <li>Worked with AWS, GCP, and embedded protocols to ensure seamless service operations.</li>
+          <li>Collaborated with international teams across Software, Design, and QA to deliver robust service tooling.</li>
+          <li>Led machine learning projects using TensorFlow and Keras, including CNNs for diagnostic solutions.</li>
+        </ul>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Email me at <a href="mailto:ethanventonsheridansmith@gmail.com">ethanventonsheridansmith@gmail.com</a>
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="contact-table">
+        <a href="https://github.com/ethansheridansmith" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/ethan-sheridan-smith/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:ethanventonsheridansmith@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+        <a href="tel:+447593888839" aria-label="Phone">
+          <i class="fas fa-phone"></i> (+44) 7593 888839
+        </a>
       </div>
-      <div class="herotext">
-        <h1>Ethan Sheridan-Smith</h1>
-        <p>Welcome to my portfolio! I create beautiful and functional websites.</p>
-    </section>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I'm Ethan, a web developer with a passion for creating beautiful and functional websites.</p>
-    </section>
-
-    <section id="projects">
-      <h2>My Projects</h2>
-      <p>Coming soon</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email me at <a href="mailto:ethanventonsheridansmith@gmail.com">ethanventonsheridansmith@gmail.com</a></p>
-    </section>
-  </main>
-
-  <!--
-  ## Footer
-  Contact links and copyright
-  -->
-  <footer>
-    <div class="contact-table">
-      <a href="https://github.com/ethansheridansmith" target="_blank" aria-label="GitHub">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/ethan-sheridan-smith/" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-      <a href="mailto:ethanventonsheridansmith@gmail.com" aria-label="Email">
-        <i class="fas fa-envelope"></i> ethanventonsheridansmith@gmail.com
-      </a>
-      <a href="tel:+447593888839" aria-label="Phone">
-        <i class="fas fa-phone"></i> (+44) 7593 888839
-      </a>
-    </div>
-    <p>&copy; 2025 Ethan's Portfolio</p>
-  </footer>
-</body>
+      <p>&copy; 2025 Ethan Sheridan-Smith</p>
+    </footer>
+  </body>
 </html>

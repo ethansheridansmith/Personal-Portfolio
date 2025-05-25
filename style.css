@@ -1,245 +1,181 @@
-/* Zen Browser-inspired dark theme */
+/* Ethan Portfolio – Clean & Modern CSS */
 
-/* 
-## General Page Styles
-*/
 body {
-    background: #1F1F1F;
-    color: #D1CFC0;
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 1.1rem;
-    letter-spacing: 0.01em;
+  background: #fff;
+  color: #181818;
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.15rem;
+  line-height: 1.6;
 }
 
-/* 
-## Header Styles
-*/
+header,
+main,
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  header,
+  main,
+  footer {
+    padding: 0 16px;
+  }
+}
+
+/* Header */
 header {
-    background: #1F1F1F;
-    padding: 48px 0 0 0;
-    text-align: center;
+  background: #fff;
+  padding-top: 48px;
+  text-align: left;
 }
 
 header h1 {
-    color: #D1CFC0;
-    margin: 0 0 24px 0;
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-    font-size: 3.75em;
-    font-weight: 550;
-    letter-spacing: 0em;
-    line-height: 1.1;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 0 0 8px;
+  letter-spacing: -0.02em;
 }
 
-/* 
-## Navigation Styles
-*/
 nav {
-    margin-top: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  margin-top: 2px;
+  border-top: 1px solid #e5e5e5;
+;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 48px;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
-    color: #e6e5d7;
-    text-decoration: none;
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    padding: 8px 18px;
-    border-radius: 8px;
-    transition: background 0.2s, color 0.2s;
+  color: #181818;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+  position: relative;
+  transition: color 0.2s;
 }
 
-nav a:hover {
-    background: #232526;
-    color: #ffb454;
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #181818;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.2s;
 }
 
-/* 
-## Main Content Container
-Centers and styles the main content area.
-*/
-
-.hero{
-    display: flex;
+nav a:hover::after,
+nav a:focus::after {
+  width: 100%;
 }
 
-.heroImage{
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 24px;
-    box-shadow: 0 4px 32px rgba(255, 255, 255, 0.18);
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  margin: 48px 0;
 }
 
-.herotext{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.herotext h1{
-    font-size: 2.5rem;
-    margin: 16px;
-}
-.herotext p{
-    font-size: 1.5rem;
-    margin: 20px;
+.herotext {
+  flex: 1;
+  min-width: 300px;
 }
 
-main {
-    max-width: 900px;
-    margin: 48px auto 0 auto;
-    padding: 0 0 0 0;
-    background: none;
-    box-shadow: none;
-    border-radius: 0;
+.herotext h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
-/* 
-## Section Card Styles
-Each section gets its own card-like border and background.
-*/
+.herotext .location,
+.herotext p {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.heroimage {
+  flex: 1;
+  min-width: 300px;
+  text-align: right;
+  padding-left: 24px;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0;
+}
+
+/* Content Sections */
 section {
-    background: #1F1F1F;
-    border-radius: 24px;
-    box-shadow: 0 4px 32px rgba(0,0,0,0.18);
-    padding: 48px 40px 40px 40px;
-    margin-bottom: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #e5e5e5;
 }
 
-/*
-## Headings
-*/
-h2, h3 {
-    color: #D1CFC0;
-    margin-top: 0;
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-    font-weight: 800;
-    font-size: 2.5rem;
-    letter-spacing: -0.01em;
-    margin-bottom: 16px;
+section:first-of-type {
+  border-top: none;
 }
 
-/* 
-## Link Styles
-Gold color for links, underline on hover.
-*/
+h2 {
+  font-size: 2.1rem;
+  font-weight: 900;
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+
 a {
-    color: #ffb454;
-    text-decoration: none;
-    transition: color 0.2s;
+  color: #181818;
+  text-decoration: underline;
+  transition: color 0.2s;
 }
 
 a:hover {
-    color: #ffdca8;
-    text-decoration: underline;
+  color: #000;
 }
 
-/* 
-## Button Styles
-Simple gold button with hover effect.
-*/
-button {
-    background: #ffb454;
-    color: #181a1b;
-    border: none;
-    padding: 10px 22px;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    font-weight: 700;
-    transition: background 0.2s, color 0.2s;
+/* Footer */
+footer {
+  padding: 48px 0 24px;
+  text-align: center;
+  font-size: 1rem;
+  background: #fff;
+  border-top: 1px solid #e5e5e5;
 }
 
-button:hover {
-    background: #ffdca8;
-    color: #181a1b;
-}
-
-/* 
-## Code Block Styles
-For inline code and pre blocks.
-*/
-code, pre {
-    background: #161b22;
-    color: #8b949e;
-    border-radius: 6px;
-    padding: 2px 6px;
-    font-family: 'Fira Mono', 'Consolas', monospace;
-}
-
-pre {
-    padding: 16px;
-    overflow-x: auto;
-}
-
-/* 
-## Contact Table (Footer Links)
-Flexbox row for contact links in the footer.
-*/
 .contact-table {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    flex-wrap: wrap;
-    margin-bottom: 16px;
-    margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 24px 0 16px;
 }
 
 .contact-table a {
-    display: flex;
-    align-items: center;
-    color: #D1CFC0;
-    font-weight: 600;
-    text-decoration: none;
-    gap: 10px;
-    font-size: 1.15rem;
-    background: #181a1b;
-    padding: 10px 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-    transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #181818;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
 .contact-table a:hover {
-    background: #232526;
-    color: #ffb454;
-}
-
-/* 
-## Footer Styles
-Centers and styles the footer text.
-*/
-footer {
-    text-align: center;
-    color: #D1CFC0;
-    padding: 32px 0 24px 0;
-    margin-top: 48px;
-    background: transparent;
-    font-size: 1rem;
-    letter-spacing: 0.01em;
-}
-
-/* 
-## Section Spacing
-Adds space between sections.
-*/
-section {
-    margin-bottom: 40px;
+  color: #000;
+  text-decoration: underline;
 }
