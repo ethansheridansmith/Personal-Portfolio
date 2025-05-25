@@ -1,5 +1,6 @@
 # Personal-Portfolio
 This is a portfolio page so that i can kick myself into gear and finally learn fullstack
+To view the page as it currently is, look here -> https://ethansheridansmith.github.io/Personal-Portfolio/
 ## Features
 
 - Showcases my projects and skills
