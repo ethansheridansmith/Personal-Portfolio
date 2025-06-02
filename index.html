@@ -14,100 +14,105 @@
   </head>
 
   <body>
-    <!-- ================= Header ================= -->
-    <header>
-      <h1>Ethan Sheridan-Smith</h1>
-      <nav>
-        <ul>
-          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-          <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
-          <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
-          <li><a href="#resume"><i class="fas fa-download"></i> Resume</a></li>
-          <li><a href="https://github.com/ethansheridansmith" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i> Github</a></li>
-          <li><a href="https://www.linkedin.com/in/ethan-sheridan-smith/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> Linkedin</a></li>
-          <li><a href="mailto:ethanventonsheridansmith@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i> Email</a></li>      
-        </ul>
-      </nav>
-    </header>
+    <div class="page-container">
+      <!-- ================= Header ================= -->
+      <header>
+        <h1>Ethan Sheridan-Smith</h1>
+        <nav>
+          <ul>
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+            <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+            <li><a href="#resume"><i class="fas fa-download"></i> Resume</a></li>
+            <li><a href="https://github.com/ethansheridansmith" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i> Github</a></li>
+            <li><a href="https://www.linkedin.com/in/ethan-sheridan-smith/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+            <li><a href="mailto:ethanventonsheridansmith@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i> Email</a></li>      
+          </ul>
+        </nav>
+      </header>
 
-    <!-- ================= Main Content ================= -->
-    <main>
+      <!-- ================= Main Content ================= -->
+      <main>
 
-      <!-- ===== Hero Section ===== -->
-      <section id="hero" class="hero">
-        <div class="herotext">
-          <h2>Service Design Connectivity Engineer</h2>
-          <p class="location">(Bristol, UK)</p>
+        <!-- ===== Hero Section ===== -->
+        <section id="hero" class="hero">
+          <div class="herotext">
+            <h2>Service Design Connectivity Engineer</h2>
+            <p class="location">(Bristol, UK)</p>
+            <p>
+              I specialise in diagnostics, connectivity, and serviceability for embedded and connected products. I’m passionate about using technology to enhance repair strategies, streamline global service operations, and build intelligent, user-focused tools.
+            </p>
+          </div>
+          <div class="heroimage">
+            <img src="assets/images/EthansImage.jpeg" alt="Ethan's photo" class="hero-img" />
+          </div>
+        </section>
+
+        <!-- ===== About Section ===== -->
+        <section id="about">
+          <h2>About Me</h2>
           <p>
-            I specialise in diagnostics, connectivity, and serviceability for embedded and connected products. I’m passionate about using technology to enhance repair strategies, streamline global service operations, and build intelligent, user-focused tools.
+            I'm a Computer Science graduate (First-Class Hons) currently working at Dyson as a Service Design Connectivity Engineer. I work across software diagnostics, connectivity (Bluetooth, WiFi, NFC), and HMI design to make complex technology more serviceable and user-friendly. I’m now looking to apply these skills in cutting-edge roles at the intersection of design, data, and full-stack development—ultimately aiming to contribute to human-centred, impactful systems.
           </p>
-        </div>
-        <div class="heroimage">
-          <img src="assets/images/EthansImage.jpeg" alt="Ethan's photo" class="hero-img" />
-        </div>
-      </section>
+        </section>
 
-      <!-- ===== About Section ===== -->
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          I'm a Computer Science graduate (First-Class Hons) currently working at Dyson as a Service Design Connectivity Engineer. I work across software diagnostics, connectivity (Bluetooth, WiFi, NFC), and HMI design to make complex technology more serviceable and user-friendly. I’m now looking to apply these skills in cutting-edge roles at the intersection of design, data, and full-stack development—ultimately aiming to contribute to human-centred, impactful systems.
-        </p>
-      </section>
+        <!-- ===== Experience Section ===== -->
+        <section id="experience">
+          <h2>Experience Highlights</h2>
+          <ul>
+            <li>Developed and deployed service software tools for global Dyson reapir centers and 3rd parties.</li>
+            <li>Improved diagnostics workflows and repair tools across connected product lines.</li>
+            <li>Designed adn implimented Servicaability requirments across all NPI Product lines.</li>
+            <li>Worked across ESW, NPD, Cloud and Service teams to ensure delivery of cloud hosted service tools.</li>
+            <li>Collaborated with Legal and Compliance teams to ensure Dyson meets legal Servicaability requirements.</li>
+            <li>Deployed global sollutions to in market issues, ensuring owners had the best experience with product.</li>
+          </ul> 
+        </section>
 
-      <!-- ===== Experience Section ===== -->
-      <section id="experience">
-        <h2>Experience Highlights</h2>
-        <ul>
-          <li>Developed and deployed service software requirements for global Dyson products.</li>
-          <li>Improved diagnostics workflows and repair tools across connected product lines.</li>
-          <li>Worked with AWS, GCP, and embedded protocols to ensure seamless service operations.</li>
-          <li>Collaborated with international teams across Software, Design, and QA to deliver robust service tooling.</li>
-          <li>Led machine learning projects using TensorFlow and Keras, including CNNs for diagnostic solutions.</li>
-        </ul>
-      </section>
+        <!-- ===== Projects Section ===== -->
+        <section id="projects">
+          <h2>Selected Projects</h2>
+          <div class="project-list">
+            <div class="project-card">
+              <h3>ML API for Employee Attrition</h3>
+              <p>Developed a REST API with Flask to serve an ML model predicting employee attrition. Containerized with Docker and deployed on Heroku.</p>
+              <a href="#">View Case Study →</a>
+            </div>
 
-      <!-- ===== Projects Section ===== -->
-      <section id="projects">
-        <h2>Selected Projects</h2>
-        <div class="project-list">
-          <div class="project-card">
-            <h3>ML API for Employee Attrition</h3>
-            <p>Developed a REST API with Flask to serve an ML model predicting employee attrition. Containerized with Docker and deployed on Heroku.</p>
-            <a href="#">View Case Study →</a>
+            <div class="project-card">
+              <h3>Diagnostic Tooling Framework</h3>
+              <p>Internal project at Dyson to standardize and streamline diagnostic tool integration across product lines.</p>
+              <a href="#">More Coming Soon</a>
+            </div>
           </div>
+        </section>
 
-          <div class="project-card">
-            <h3>Diagnostic Tooling Framework</h3>
-            <p>Internal project at Dyson to standardize and streamline diagnostic tool integration across product lines.</p>
-            <a href="#">More Coming Soon</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===== Resume Section ===== -->
-      <section id="resume" class="left-section">
-        <h2>Resume</h2>
-        <a href="assets/Resume/Ethan-V-Sheridan-Smith-CV.pdf" download class="download-btn">
-          <i class="fas fa-download"></i> Download My up to date Resume
-        </a>
-      </section>
-    </main>
+        <!-- ===== Resume Section ===== -->
+        <section id="resume" class="left-section">
+          <h2>Resume</h2>
+          <a href="assets/Resume/Ethan-V-Sheridan-Smith-CV.pdf" download class="download-btn">
+            <i class="fas fa-download"></i> Download My up to date Resume
+          </a>
+        </section>
+      </main>
+    </div>
 
     <!-- ================= Footer ================= -->
     <footer>
-      <div class="contact-table">
-        <a href="https://github.com/ethansheridansmith" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/ethan-sheridan-smith/" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="mailto:ethanventonsheridansmith@gmail.com" aria-label="Email">
-          <i class="fas fa-envelope"></i> Email
-        </a>
+      <div class="footer-inner">
+        <div class="contact-table">
+          <a href="https://github.com/ethansheridansmith" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/ethan-sheridan-smith/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="mailto:ethanventonsheridansmith@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </div>
+        <p>&copy; 2025 Ethan Sheridan-Smith</p>
       </div>
-      <p>&copy; 2025 Ethan Sheridan-Smith</p>
     </footer>
   </body>
 </html>

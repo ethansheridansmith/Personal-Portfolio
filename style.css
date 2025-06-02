@@ -1,8 +1,8 @@
-/* Ethan Portfolio – Updated with Project Styling and Theme */
+/* Ethan Portfolio – Updated with Unified Layout and Responsive Footer */
 
-/* Base Styles */
+/* ===== Base Styles ===== */
 body {
-  background-color: #f9f9fb;
+  background-color: #F4F4F2;
   color: #2e2e2e;
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -11,27 +11,58 @@ body {
   line-height: 1.6;
 }
 
-/* Page Container Layout */
+/* ===== Layout Container ===== */
 header,
 main,
 footer {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 48px;
   box-sizing: border-box;
 }
 
+/* ===== Footer Styles ===== */
+footer {
+  padding-top: 48px;
+  padding-bottom: 24px;
+  font-size: 0.95rem;
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* ===== Responsive Padding Adjustments ===== */
 @media (max-width: 900px) {
+  header,
+  main,
+  footer {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 600px) {
   header,
   main,
   footer {
     padding: 0 16px;
   }
+
+  header h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    white-space: normal;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
 }
 
-/* ---------------- Header ---------------- */
+/* ===== Header ===== */
 header {
-  background: #f9f9fb;
+  background: #F4F4F2;
   padding-top: 48px;
   text-align: left;
 }
@@ -43,16 +74,7 @@ header h1 {
   white-space: nowrap;
 }
 
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 2.2rem;
-    line-height: 1.2;
-    white-space: normal;
-  }
-}
-
-/* ---------------- Navigation ---------------- */
-
+/* ===== Navigation ===== */
 nav {
   padding-bottom: 16px;
 }
@@ -65,14 +87,6 @@ nav ul {
   margin: 32px 0 0;
   flex-wrap: wrap;
   justify-content: flex-start;
-}
-
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-  }
 }
 
 nav a {
@@ -98,31 +112,18 @@ nav a:hover::after {
   width: 100%;
 }
 
-
-
-/* ---------------- Hero Section ---------------- */
+/* ===== Hero Section ===== */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 60px;
-  
 }
 
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .heroimage {
-    padding: 0;
-  }
-
-  .herotext h2 {
-    font-size: 2rem;
-  }
+.heroimage {
+  flex: 1;
+  text-align: right;
 }
 
 .herotext {
@@ -136,11 +137,6 @@ nav a:hover::after {
   margin-bottom: 12px;
 }
 
-.heroimage {
-  flex: 1;
-  text-align: right;
-}
-
 .hero-img {
   width: 100%;
   max-width: 360px;
@@ -148,11 +144,10 @@ nav a:hover::after {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* ---------------- Section Defaults ---------------- */
-
+/* ===== Section Defaults ===== */
 section {
   padding: 40px 0;
-    border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
 }
 
 h2 {
@@ -161,20 +156,13 @@ h2 {
   margin-bottom: 18px;
 }
 
-/* ---------------- Project Cards ---------------- */
-
+/* ===== Project Cards ===== */
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 32px;
   align-items: stretch;
   margin-bottom: 60px;
-}
-
-@media (max-width: 600px) {
-  .project-list {
-    gap: 60px;
-  }
 }
 
 .project-card {
@@ -217,9 +205,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* ---------------- Resume Button ---------------- */
-
-/* Resume Section Consistency */
+/* ===== Resume Button ===== */
 .left-section {
   text-align: left;
 }
@@ -243,7 +229,7 @@ h2 {
   color: yellow;
 }
 
-/* ---------------- Global Links ---------------- */
+/* ===== Global Links ===== */
 a {
   color: #6c63ff;
   text-decoration: underline;
@@ -253,15 +239,7 @@ a:hover {
   color: #4b4bff;
 }
 
-/* ---------------- Footer ---------------- */
-footer {
-  text-align: center;
-  padding: 48px 0 24px;
-  border-top: 1px solid #e0e0e0;
-  font-size: 0.95rem;
-  color: #777;
-}
-
+/* ===== Contact Footer Links ===== */
 .contact-table {
   display: flex;
   justify-content: center;
