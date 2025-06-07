@@ -1,118 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ethan Sheridan-Smith – Service Design Engineer</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Ethan Sheridan-Smith</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="scripts/main.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">Ethan Sheridan-Smith</div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="projects.html"><i class="fas fa-folder-open"></i> Projects</a></li>
+        <li><a href="resume.html"><i class="fas fa-file-lines"></i> Resume</a></li>
+        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <div class="page-container">
-      <!-- ================= Header ================= -->
-      <header>
-        <h1>Ethan Sheridan-Smith</h1>
-        <nav>
-          <ul>
-            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-            <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
-            <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
-            <li><a href="#resume"><i class="fas fa-download"></i> Resume</a></li>
-            <li><a href="https://github.com/ethansheridansmith" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i> Github</a></li>
-            <li><a href="https://www.linkedin.com/in/ethan-sheridan-smith/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> Linkedin</a></li>
-            <li><a href="mailto:ethanventonsheridansmith@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i> Email</a></li>      
-          </ul>
-        </nav>
-      </header>
-
-      <!-- ================= Main Content ================= -->
-      <main>
-
-        <!-- ===== Hero Section ===== -->
-        <section id="hero" class="hero">
-          <div class="herotext">
-            <h2>Service Design Connectivity Engineer</h2>
-            <p class="location">(Bristol, UK)</p>
-            <p>
-              I specialise in diagnostics, connectivity, and serviceability for embedded and connected products. I’m passionate about using technology to enhance repair strategies, streamline global service operations, and build intelligent, user-focused tools.
-            </p>
-          </div>
-          <div class="heroimage">
-            <img src="assets/images/EthansImage.jpeg" alt="Ethan's photo" class="hero-img" />
-          </div>
-        </section>
-
-        <!-- ===== About Section ===== -->
-        <section id="about">
-          <h2>About Me</h2>
-          <p>
-            I'm a Computer Science graduate (First-Class Hons) currently working at Dyson as a Service Design Connectivity Engineer. I work across software diagnostics, connectivity (Bluetooth, WiFi, NFC), and HMI design to make complex technology more serviceable and user-friendly. I’m now looking to apply these skills in cutting-edge roles at the intersection of design, data, and full-stack development—ultimately aiming to contribute to human-centred, impactful systems.
-          </p>
-        </section>
-
-        <!-- ===== Experience Section ===== -->
-        <section id="experience">
-          <h2>Experience Highlights</h2>
-          <ul>
-            <li>Developed and deployed service software tools for global Dyson reapir centers and 3rd parties.</li>
-            <li>Improved diagnostics workflows and repair tools across connected product lines.</li>
-            <li>Designed adn implimented Servicaability requirments across all NPI Product lines.</li>
-            <li>Worked across ESW, NPD, Cloud and Service teams to ensure delivery of cloud hosted service tools.</li>
-            <li>Collaborated with Legal and Compliance teams to ensure Dyson meets legal Servicaability requirements.</li>
-            <li>Deployed global sollutions to in market issues, ensuring owners had the best experience with product.</li>
-          </ul> 
-        </section>
-
-        <!-- ===== Projects Section ===== -->
-        <section id="projects">
-          <h2>Selected Projects</h2>
-          <div class="project-list">
-            <div class="project-card">
-              <h3>ML API for Employee Attrition</h3>
-              <p>Developed a REST API with Flask to serve an ML model predicting employee attrition. Containerized with Docker and deployed on Heroku.</p>
-              <a href="#">View Case Study →</a>
-            </div>
-
-            <div class="project-card">
-              <h3>Diagnostic Tooling Framework</h3>
-              <p>Internal project at Dyson to standardize and streamline diagnostic tool integration across product lines.</p>
-              <a href="#">More Coming Soon</a>
-            </div>
-          </div>
-        </section>
-
-        <!-- ===== Resume Section ===== -->
-        <section id="resume" class="left-section">
-          <h2>Resume</h2>
-          <a href="assets/Resume/Ethan-V-Sheridan-Smith-CV.pdf" download class="download-btn">
-            <i class="fas fa-download"></i> Download My up to date Resume
-          </a>
-        </section>
-      </main>
-    </div>
-
-    <!-- ================= Footer ================= -->
-    <footer>
-      <div class="footer-inner">
-        <div class="contact-table">
-          <a href="https://github.com/ethansheridansmith" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/ethan-sheridan-smith/" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-          <a href="mailto:ethanventonsheridansmith@gmail.com" aria-label="Email">
-            <i class="fas fa-envelope"></i> Email
-          </a>
-        </div>
-        <p>&copy; 2025 Ethan Sheridan-Smith</p>
+  <main class="home-main">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hi, I’m Ethan</h1>
+        <p>Service Design Engineer focused on diagnostics, connectivity, and user-centered tools. Based in Bristol, UK.</p>
       </div>
-    </footer>
-  </body>
+      <div class="hero-image">
+        <img src="assets/images/EthansImage.jpeg" alt="Photo of Ethan" />
+      </div>
+    </section>
+
+    <section class="quick-facts">
+      <h2>Quick Facts</h2>
+      <ul>
+        <li>Engineer at Dyson</li>
+        <li>Specialist in Embedded & Cloud Diagnostics</li>
+        <li>Passionate about ML and Full-Stack Dev</li>
+        <li>Tech Stack: Python, JS, AWS, TensorFlow</li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2>Core Skills</h2>
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Flask / FastAPI</li>
+        <li>Docker</li>
+        <li>Git & GitHub</li>
+        <li>Cloud (AWS, GCP)</li>
+      </ul>
+    </section>
+
+    <section class="featured-project">
+      <h2>Featured Project</h2>
+      <div class="project-highlight">
+        <div class="project-info">
+          <h3>ML API for Employee Attrition</h3>
+          <p>Built a Flask API to predict employee attrition using machine learning. Dockerized and deployed to Heroku.</p>
+          <a href="projects.html">View All Projects →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="https://github.com/ethansheridansmith" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/ethan-sheridan-smith/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:ethanventonsheridansmith@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+    <p>&copy; 2025 Ethan Sheridan-Smith</p>
+  </footer>
+</body>
 </html>
