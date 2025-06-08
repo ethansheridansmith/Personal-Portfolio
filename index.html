@@ -6,24 +6,12 @@
   <title>Home | Ethan Sheridan-Smith</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="scripts/main.js" defer></script>
+  <script src="scripts/nav.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar">
-      <div class="logo">Ethan Sheridan-Smith</div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
-        <li><a href="projects.html"><i class="fas fa-folder-open"></i> Projects</a></li>
-        <li><a href="resume.html"><i class="fas fa-file-lines"></i> Resume</a></li>
-        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-      </ul>
-    </nav>
-  </header>
+  <header class="site-header"></header>
 
   <main class="home-main">
     <section class="hero">
@@ -38,12 +26,15 @@
 
     <section class="quick-facts">
       <h2>Quick Facts</h2>
-      <ul>
-        <li>Engineer at Dyson</li>
-        <li>Specialist in Embedded & Cloud Diagnostics</li>
-        <li>Passionate about ML and Full-Stack Dev</li>
-        <li>Tech Stack: Python, JS, AWS, TensorFlow</li>
-      </ul>
+      <div class="quick-facts-box">
+        <ul>
+          <li>Engineer at Dyson</li>
+          <li>Design Service tools for use in Service centers globally</li>
+          <li>Assist NPI teams with Product repair strategies</li>
+          <li>Passionate about user-centered design</li>
+          <li>First Class computer science graduate</li>
+        </ul>
+      </div>
     </section>
 
     <section class="skills">
@@ -54,7 +45,7 @@
         <li>Flask / FastAPI</li>
         <li>Docker</li>
         <li>Git & GitHub</li>
-        <li>Cloud (AWS, GCP)</li>
+        <li>Cloud (AWS)</li>
       </ul>
     </section>
 

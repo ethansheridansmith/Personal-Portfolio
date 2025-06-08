@@ -4,6 +4,7 @@
 :root {
   --bg-light: #d6d2ca;
   --text-dark: #2e2e2e;
+  --text-light: #ffffff;
   --highlight: #6c63ff;
   --divider: #000000;
   --section-block: #d6d2ca;
@@ -164,14 +165,6 @@ main {
 }
 
 /* ===== Quick Facts ===== */
-
-.quick-facts {
-  background-color: #efede8; /* same tone as skills highlight */
-  padding: 2rem;
-  border-radius: 8px;
-  margin: 2rem 0;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-}
 
 .quick-facts h2 {
   font-size: 1.8rem;
